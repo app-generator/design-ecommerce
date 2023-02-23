@@ -1,6 +1,6 @@
-# Core Bootstrap Project for `FIGMA`
+# [eCommerce Design](https://github.com/app-generator/design-ecommerce) `FIGMA`
 
-Free Template styled with **Bootstrap** `v5.2.3` using a simple codebase and best practices.
+Free **[eCommerce Design](https://github.com/app-generator/design-ecommerce)** Template styled with **Bootstrap 5** using a simple codebase and best practices.
 
 - 👉 [See DEMO](https://www.figma.com/file/zEQqvdGW9gDz6LtXIIcHHv/eComm---v1.0.0) - `FIGMA version`
 
