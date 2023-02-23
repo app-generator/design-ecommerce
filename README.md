@@ -2,16 +2,11 @@
 
 Free Template styled with **Bootstrap** `v5.2.3` using a simple codebase and best practices.
 
-- 👉 [DEMO HERE](#): `HTML DEMO`
-- 🛒 **[Buy Figma Project](#)**: `ONLY $19`, payment managed by `GUMROAD` 
-  - [See DEMO](#) - `FIGMA version`
-  - `Updates`: Lifetime
-  - `Number of Projects`: Unlimited
-- 🚀 Free [Support](https://appseed.us/support/) via Email & Discord
+- 👉 [See DEMO](https://www.figma.com/file/zEQqvdGW9gDz6LtXIIcHHv/eComm---v1.0.0) - `FIGMA version`
 
 <br />
 
-> IMAGE here
+![Simple eCommerce - FIGMA Project](https://user-images.githubusercontent.com/51070104/220924854-85321144-433f-48b5-bc40-a93fd4c4dafa.png)
 
 <br />
 
