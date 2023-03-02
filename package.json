@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/app-generator/design-web-agency.git"
+    "url": "git+https://github.com/app-generator/design-ecommerce.git"
   },
   "keywords": [
-    "web agency",
+    "Fashion Template by AppSeed",
     "bootstrap 5",
     "appseed",
     "html one-page",
@@ -29,16 +29,16 @@
   "author": "AppSeed <support@appseed.us> (https://appseed.us)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/app-generator/design-web-agency/issues"
+    "url": "https://github.com/app-generator/design-ecommerce/issues"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean": "^0.4.0",
     "gulp-install": "^1.1.0",
+    "gulp-open": "^3.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-open": "^3.0.1",
     "sass": "^1.49.9"
   },
   "homepage": "https://appseed.us"

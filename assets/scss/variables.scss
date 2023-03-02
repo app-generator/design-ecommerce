@@ -3,37 +3,45 @@
 * Copyright AppSeed (https://appseed.us)
 * License MIT
 */
-$soft-background-color: #ffffff !default; // Testing
-$font-color : #67748e !default;
+$soft-background-color: #ffffff !default;
+$font-color : #28282A !default;
 $h-color: #344767 !default;
+$primary-fonts: 'Ubuntu', sans-serif;
+$secondary-fonts: 'Poppins', sans-serif;
 
 // Color system
 $white: #fff !default;
-$gray-100 : #f8f9fa !default;
-$gray-200 : #EAEAEA !default;
-$gray-300: #81818B !default;
+$gray-100 : #E4E5EA !default;
+$gray-200 : #EEEEEE !default;
+$gray-300: #e2e2e2 !default;
 $gray-400: #9C9C9C !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-500: #747474 !default;
+$gray-600: #717171 !default;
 $gray-700: #495057 !default;
-$gray-800: #343434 !default;
+$gray-800: #151515 !default;
 $gray-900: #0D0D11 !default;
 $black: #000 !default;
+$border-1: #D1D1D1 !default;
+$border-2: #3793D1 !default;
+$input-text-color: #9F9F9F !default;
 // fusv-enable 
-$blue: #00B9AC !default;
-$indigo: #596CFF !default;
+$blue: #113869 !default;
+$dark-blue: #1B4F87 !default;
+$indigo: #2D5F84 !default;
 $purple: #6f42c1 !default;
-$pink: #d63384 !default;
-$red: #F56565 !default;
+$pink: #D081A4 !default;
+$red: #FF0000 !default;
 $orange: #FF7A00 !default;
-$yellow: #FBD38D !default;
-$green: #81E6D9 !default;
+$yellow: #FFE759 !default;
+$green: #94DB33 !default;
 $teal: #20c997 !default;
 $cyan: #00B9AC !default;
+
 
 // scss-docs-start colors-map
 $colors: (
     "blue": $blue,
+    "darkBlue":$dark-blue,
     "indigo": $indigo,
     "purple": $purple,
     "pink": $pink,
@@ -46,20 +54,22 @@ $colors: (
     "white": $white,
     "gray": $gray-600,
     "gray-dark": $gray-800,
+    "border-1": $border-1,
     ) !default;
 
 /*
 * Global Styling (edit below variables) 
 * Warn: once edited, the SCSS needs to be recompiled
 */
-$primary:   #FF7A00 !default; // primary color
+$primary: #28282A !default; // primary color
 $secondary: #00D2C4 !default; // secondary
-$info:      #17c1e8 !default; 
-$success:   #82d616 !default;
-$warning:   #fbcf33 !default;
-$danger:    #ea0606 !default;
-$light:     $gray-200 !default;
-$dark:      $h-color !default;
+$info: #17c1e8 !default;
+$success: #82d616 !default;
+$warning: #fbcf33 !default;
+$danger: #ea0606 !default;
+$light: $gray-200 !default;
+$dark: $h-color !default;
+$gray-light: #f3f3f3 !default;
 // END Global Styling
 
 // scss-docs-start theme-colors-map
@@ -72,5 +82,7 @@ $theme-colors: (
     "danger": $danger,
     "light": $light,
     "dark": $dark,
-    "white": $white) !default;
+    "white": $white,
+    "gray-light":$gray-light) !default;
+
 // scss-docs-end theme-colors-map
