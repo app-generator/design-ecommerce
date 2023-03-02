@@ -17,7 +17,7 @@ Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommer
 
 <br />
 
-![Simple eCommerce - FIGMA Project](https://user-images.githubusercontent.com/51070104/220924854-85321144-433f-48b5-bc40-a93fd4c4dafa.png)
+![eCommerce Design - Open-source Template crafted by AppSeed.](https://user-images.githubusercontent.com/51070104/222493888-99585696-212e-4f53-9366-b73e01e72582.gif)
 
 <br />
 
@@ -97,4 +97,4 @@ At this point, the new styles should be visible in the website.
 <br />
 
 --- 
-eCommerce Design - Open-Source project crafted by [AppSeed](https://appseed.us/).
+Open-Source eCommerce Design - Open-Source project crafted by [AppSeed](https://appseed.us/).
