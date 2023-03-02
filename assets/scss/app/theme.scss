@@ -39,6 +39,7 @@ ul {
     flex-direction: column;
 }
 
+
 .primary-gradient {
     background: linear-gradient(90deg, #4281D0 0%, #072448 100%);
     ;
@@ -120,6 +121,7 @@ h6,
 
 
 .main-content {
+    overflow-x: hidden;
     .btn {
         font-family: $primary-fonts;
         font-weight: 400;
