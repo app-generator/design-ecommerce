@@ -23,7 +23,7 @@
         font-size: 52px;
         line-height: 62px;
         letter-spacing: -0.06em;
-        background: linear-gradient(91.02deg, #4280CF 7.23%, #3975C0 14.99%, #0C315F 50.29%, #0A2444 63.22%, #03234B 85.09%, #4280CF 102.7%);
+        @include text-primary-gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;

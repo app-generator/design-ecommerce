@@ -7,6 +7,8 @@
 // Global Styling 
 @import "../variables.scss";
 
+
+
 html,
 body {
     min-width: 360px;
@@ -41,8 +43,7 @@ ul {
 
 
 .primary-gradient {
-    background: linear-gradient(90deg, #4281D0 0%, #072448 100%);
-    ;
+    @include primary-gradient;
 }
 
 h1,
@@ -84,7 +85,7 @@ h6,
 }
 
 .text-generator {
-    background: linear-gradient(91.02deg, #4280CF 7.23%, #3975C0 14.99%, #0C315F 50.29%, #0A2444 63.22%, #03234B 85.09%, #4280CF 102.7%);
+    @include text-primary-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -102,16 +103,14 @@ h6,
 }
 
 .btn-light {
-    background: $white !important;
-
     span {
-        color: $blue !important;
+        color: $primary !important;
         position: relative;
         z-index: 2;
     }
 
     &::before {
-        background: $blue !important;
+        background: $primary !important;
     }
 
     &:hover span {
@@ -122,6 +121,7 @@ h6,
 
 .main-content {
     overflow-x: hidden;
+
     .btn {
         font-family: $primary-fonts;
         font-weight: 400;
@@ -151,11 +151,6 @@ h6,
             top: -1px;
             opacity: 1;
         }
-
-        &.btn-primary {
-            background-color: $blue;
-            color: $white;
-        }
     }
 
 }
@@ -164,7 +159,7 @@ h6,
     .accordion-item {
         .accordion-button {
             font-family: $secondary-fonts;
-            color: $blue;
+            color: $primary;
             font-weight: 600;
             font-size: 17px;
             line-height: 24px;
@@ -264,12 +259,18 @@ h6,
                     top: 0;
                     margin: 0;
 
+                    svg {
+                        path {
+                            fill: $primary !important;
+                        }
+                    }
+
                     &::after {
                         display: none;
                     }
 
                     &:hover {
-                        background: linear-gradient(91.02deg, #4280CF 7.23%, #3975C0 14.99%, #0C315F 50.29%, #0A2444 63.22%, #03234B 85.09%, #4280CF 102.7%);
+                        background: linear-gradient(91.02deg, $primary-light 0%, $primary-dark 100%);
 
                         svg {
                             path {
@@ -378,7 +379,7 @@ h6,
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: $blue;
+        background: $primary;
     }
 }
 

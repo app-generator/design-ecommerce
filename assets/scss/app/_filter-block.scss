@@ -3,9 +3,9 @@
 // =========================================================
 .filter-block {
     padding: 20px 0;
-    background: linear-gradient(90deg, #4281D0 0%, #072448 100%);
     font-family: $secondary-fonts;
     color: $white;
+    @include primary-gradient;
 
     .filter-menu {
         display: flex;

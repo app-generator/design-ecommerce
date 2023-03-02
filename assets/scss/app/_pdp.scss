@@ -23,8 +23,14 @@
                 display: none;
             }
 
+            svg {
+                path {
+                    fill: $primary !important;
+                }
+            }
+
             &:hover {
-                background: linear-gradient(91.02deg, #4280CF 7.23%, #3975C0 14.99%, #0C315F 50.29%, #0A2444 63.22%, #03234B 85.09%, #4280CF 102.7%);
+                @include primary-gradient;
 
                 svg {
                     path {
@@ -113,7 +119,7 @@
 
         .form-select {
             font-family: 'Ubuntu';
-            color: $blue;
+            color: $primary;
             font-weight: 400;
             font-size: 24px;
             line-height: 21px;
@@ -133,7 +139,7 @@
 
             .number-btn {
                 font-family: 'Ubuntu';
-                color: $blue;
+                color: $primary;
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 42px;
@@ -142,7 +148,7 @@
 
             .form-control {
                 font-family: 'Ubuntu';
-                color: $blue;
+                color: $primary;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 42px;
@@ -193,7 +199,7 @@
 
             .product-future-text {
                 font-family: 'Ubuntu';
-                color: $blue;
+                color: $primary;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 20px;

@@ -26,6 +26,7 @@ $border-2: #3793D1 !default;
 $input-text-color: #9F9F9F !default;
 // fusv-enable 
 $blue: #113869 !default;
+$primary-blue: #28282A !default;
 $dark-blue: #1B4F87 !default;
 $indigo: #2D5F84 !default;
 $purple: #6f42c1 !default;
@@ -61,13 +62,15 @@ $colors: (
 * Global Styling (edit below variables) 
 * Warn: once edited, the SCSS needs to be recompiled
 */
-$primary: #28282A !default; // primary color
+$primary: #113869 !default; // primary color
+$primary-light: #4281D0 !default; // primary light
+$primary-dark: #072448 !default; // primary dark 
 $secondary: #00D2C4 !default; // secondary
 $info: #17c1e8 !default;
 $success: #82d616 !default;
 $warning: #fbcf33 !default;
 $danger: #ea0606 !default;
-$light: $gray-200 !default;
+$light: #ffffff !default;
 $dark: $h-color !default;
 $gray-light: #f3f3f3 !default;
 // END Global Styling
@@ -86,3 +89,11 @@ $theme-colors: (
     "gray-light":$gray-light) !default;
 
 // scss-docs-end theme-colors-map
+
+@mixin primary-gradient() {
+    background: linear-gradient(91.02deg, $primary-light 0%, $primary-dark 100%);
+}
+
+@mixin text-primary-gradient() {
+    background: linear-gradient(91.02deg, $primary-light 0%, $primary-dark 85.09%, $primary-light 102.7%);
+}
