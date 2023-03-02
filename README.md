@@ -84,15 +84,29 @@ At this point, the new styles should be visible in the website.
 
 <br />
 
-## Section_1
+## Sections
 
-> Section_1 screen here
+> Product Page
+
+![Product Page - Open-Source eCommerce Design by AppSeed.](https://user-images.githubusercontent.com/51070104/222496040-57f61809-d11a-407f-a977-f558489a3d7f.jpg)
 
 <br />
 
-## Section_2
+> Testimonial Component
 
-> Section_2 screen here
+![Testimonial - Open-Source eCommerce Design by AppSeed.](https://user-images.githubusercontent.com/51070104/222496235-f231562f-eaf6-4195-a5a2-5cbb2b0a584c.jpg)
+
+<br />
+
+> PROMO Component
+
+![PROMO Component - Open-Source eCommerce Design by AppSeed.](https://user-images.githubusercontent.com/51070104/222496393-48f52793-7125-46f2-b5f6-2bc7a7e3b9e5.jpg)
+
+<br />
+
+> Brand Component
+
+![Brand Component - Open-Source eCommerce Design by AppSeed.](https://user-images.githubusercontent.com/51070104/222496561-e5a8be78-f414-4b5f-afe7-439bb058a699.jpg)
 
 <br />
 
