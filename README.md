@@ -1,8 +1,19 @@
-# [eCommerce Design](https://github.com/app-generator/design-ecommerce) `FIGMA`
+# [eCommerce Design](https://design-ecommerce.appseed-srv1.com/)
 
-Free **[eCommerce Design](https://github.com/app-generator/design-ecommerce)** Template styled with **Bootstrap 5** using a simple codebase and best practices.
+Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommerce)** Template styled with **Bootstrap 5** using a simple codebase and best practices - Actively supported by [AppSeed](https://appseed.us/).
 
-- 👉 [See DEMO](https://www.figma.com/file/zEQqvdGW9gDz6LtXIIcHHv/eComm---v1.0.0) - `FIGMA version`
+- 👉 [eCommerce Design](https://design-ecommerce.appseed-srv1.com/): `HTML DEMO`
+- 👉 `License` [CC BY 3.0](./LICENSE.md) - `Preserve footer credit`
+
+<br />
+
+> Need More? **🛒 [BUY License](https://appseed.gumroad.com/l/design-ecommerce)**: `ONLY $19` (managed by GUMROAD) 
+
+- Access to [FIGMA File](https://bit.ly/figma-ecommerce) `view demo`
+- `Remove Footer Credits`
+- `Updates`: Lifetime
+- `Unlimited` hobby & commercial `projects` 
+- 🚀 [Support](https://appseed.us/support/) via Email & Discord
 
 <br />
 
@@ -14,12 +25,13 @@ Free **[eCommerce Design](https://github.com/app-generator/design-ecommerce)** T
 
 - 🚀 [Bootstrap 5](https://www.admin-dashboards.com/bootstrap-5-templates/) 
 - ⚙️ `Gulp Tooling` (simple usage, no fancy tools)
-- ✅ **Easy Customization** (below files are already integrated)
-  - `Primary/secondary` colors in [variables.scss](#)
-  - `Add your own code` in [custom.scss](#)
-- ✅ Sections
-  - ✅ [Section_1](#), styled in [#](#)
-  - ✅ [Section_2](#), styled in [#](#)
+- ✅ **Easy Customization** (files already integrated)
+  - `Primary/secondary` colors in [variables.scss](https://github.com/app-generator/design-ecommerce/blob/main/assets/scss/variables.scss)
+  - `Add your own code` in [custom.scss](https://github.com/app-generator/design-ecommerce/blob/main/assets/scss/custom.scss)
+- ✅ Pages
+  - ✅ HOMEpage
+  - ✅ Category Page
+  - ✅ Product  
 
 <br />
 
@@ -85,4 +97,4 @@ At this point, the new styles should be visible in the website.
 <br />
 
 --- 
-Core Bootstrap Project for `FIGMA` - Open-Source project crafted by [AppSeed](https://appseed.us/).
+eCommerce Design - Open-Source project crafted by [AppSeed](https://appseed.us/).
