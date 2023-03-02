@@ -120,7 +120,7 @@ h6,
 
 
 .main-content {
-    overflow-x: hidden;
+    overflow: hidden;
 
     .btn {
         font-family: $primary-fonts;
@@ -379,7 +379,7 @@ h6,
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: $primary;
+        background: $secondary;
     }
 }
 
