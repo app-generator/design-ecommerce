@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.1] 2023-03-20
+### Changes
+
+- Tooling Update
+- Extract Components (all files)
+
 ## [1.0.0] 2023-02-23
 ### Changes
 
