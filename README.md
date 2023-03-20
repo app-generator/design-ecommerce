@@ -40,9 +40,10 @@ Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommer
 > Compile the project
 
 ```bash
-$ yarn       # install modules
-$ gulp       # start for development
-$ gulp scss  # recompile SCSS
+$ yarn      # install modules
+$ gulp      # start for development
+$ gulp dev  # Development Build
+$ gulp prod # Production Build (compressed assets)
 ```
 
 The design should be visible in the browser.
