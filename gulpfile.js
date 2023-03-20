@@ -1,13 +1,7 @@
 /*
-=========================================================
-* app Free - Bootstrap 5 Dashboard
-=========================================================
-* Product Page: https://themesberg.com/product/admin-dashboard/app-premium-bootstrap-5-dashboard
-* Copyright 2020 Themesberg (https://www.themesberg.com)
-* License (https://themesberg.com/licensing)
-* Designed and coded by https://themesberg.com
-=========================================================
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+* Simple GULP tooling
+* Copyright AppSeed (https://appseed.us)
+* License MIT
 */
 
 var autoprefixer = require('gulp-autoprefixer');
@@ -28,46 +22,46 @@ var fileinclude = require('gulp-file-include');
 const paths = {
     dist: {
         base: './dist/',
-        // css: './dist/css',
+        css: './dist/css',
         html: './dist/pages',
         assets: './dist/assets',
         img: './dist/assets/img',
-        // vendor: './dist/vendor'
+        vendor: './dist/vendor'
     },
     dev: {
-        base: './html&css/',
-        // css: './html&css/css',
-        html: './html&css/pages',
-        assets: './html&css/assets',
-        img: './html&css/assets/img',
-        // vendor: './html&css/vendor'
+        base: './html/',
+        css: './html/css',
+        html: './html/pages',
+        assets: './html/assets',
+        img: './html/assets/img',
+        vendor: './html/vendor'
     },
     base: {
         base: './',
         node: './node_modules'
     },
     src: {
-        base: './',
-        // css: './css',
-        html: './**/*.html',
-        assets: './assets/**/*.*',
-        partials: './partials/**/*.html',
-        scss: './assets/scss',
+        base: './src/',
+        css: './src/assets/css',
+        html: './src/pages/**/*.html',
+        assets: './src/assets/**/*.*',
+        partials: './src/partials/**/*.html',
+        scss: './src/assets/scss',
         node_modules: './node_modules/',
-        // vendor: './vendor'
+        vendor: './vendor'
     },
     temp: {
         base: './.temp/',
-        // css: './.temp/css',
+        css: './.temp/assets/css',
         html: './.temp/pages',
         assets: './.temp/assets',
-        // vendor: './.temp/vendor'
+        vendor: './.temp/vendor'
     }
 };
 
-// Compile SCSS
-gulp.task('scss', function () {
-    return gulp.src([paths.src.scss + '/custom/**/*.scss', paths.src.scss + '/app/**/*.scss', paths.src.scss + '/app.scss'])
+// Compile SCSS -> temp
+gulp.task('scss-tmp', function () {
+    return gulp.src([paths.src.scss + '/app.scss'])
         .pipe(wait(500))
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
@@ -75,7 +69,21 @@ gulp.task('scss', function () {
             overrideBrowserslist: ['> 1%']
         }))
         .pipe(sourcemaps.write('.'))
-        // .pipe(gulp.dest(paths.temp.css))
+        .pipe(gulp.dest(paths.temp.css))
+        .pipe(browserSync.stream());
+});
+
+// Compile CSS
+gulp.task('scss', function () {
+    return gulp.src([paths.src.scss + '/app.scss'])
+        .pipe(wait(500))
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['> 1%']
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(paths.src.css))
         .pipe(browserSync.stream());
 });
 
@@ -111,39 +119,39 @@ gulp.task('assets', function () {
         .pipe(browserSync.stream());
 });
 
-// gulp.task('vendor', function() {
-//     return gulp.src(npmDist(), { base: paths.src.node_modules })
-//       .pipe(gulp.dest(paths.temp.vendor));
-// });
+gulp.task('vendor', function() {
+    return gulp.src(npmDist(), { base: paths.src.node_modules })
+      .pipe(gulp.dest(paths.temp.vendor));
+});
 
-gulp.task('serve', gulp.series('scss', 'html', 'index', 'assets', function() {
+gulp.task('serve', gulp.series('scss-tmp', 'html', 'index', 'assets', 'vendor', function() {
     browserSync.init({
         server: paths.temp.base
     });
 
-    gulp.watch([paths.src.scss + '/app/**/*.scss', paths.src.scss + '/custom/**/*.scss', paths.src.scss + '/app.scss'], gulp.series('scss'));
+    gulp.watch([paths.src.scss + '/app.scss'], gulp.series('scss'));
     gulp.watch([paths.src.html, paths.src.base + '*.html', paths.src.partials], gulp.series('html', 'index'));
     gulp.watch([paths.src.assets], gulp.series('assets'));
-    // gulp.watch([paths.src.vendor], gulp.series('vendor'));
+    gulp.watch([paths.src.vendor], gulp.series('vendor'));
 }));
 
 // Beautify CSS
-// gulp.task('beautify:css', function () {
-//     return gulp.src([
-//         paths.dev.css + '/app.css'
-//     ])
-//         .pipe(cssbeautify())
-//         .pipe(gulp.dest(paths.dev.css))
-// });
+gulp.task('beautify:css', function () {
+    return gulp.src([
+        paths.dev.css + '/app.css'
+    ])
+        .pipe(cssbeautify())
+        .pipe(gulp.dest(paths.dev.css))
+});
 
-// // Minify CSS
-// gulp.task('minify:css', function () {
-//     return gulp.src([
-//         paths.dist.css + '/app.css'
-//     ])
-//     .pipe(cleanCss())
-//     .pipe(gulp.dest(paths.dist.css))
-// });
+// Minify CSS
+gulp.task('minify:css', function () {
+    return gulp.src([
+        paths.dist.css + '/app.css'
+    ])
+    .pipe(cleanCss())
+    .pipe(gulp.dest(paths.dist.css))
+});
 
 // Minify Html
 gulp.task('minify:html', function () {
@@ -186,29 +194,29 @@ gulp.task('clean:dev', function () {
 });
 
 // Compile and copy scss/css
-// gulp.task('copy:dist:css', function () {
-//     return gulp.src([paths.src.scss + '/app/**/*.scss', paths.src.scss + '/custom/**/*.scss', paths.src.scss + '/app.scss'])
-//         .pipe(wait(500))
-//         .pipe(sourcemaps.init())
-//         .pipe(sass().on('error', sass.logError))
-//         .pipe(autoprefixer({
-//             overrideBrowserslist: ['> 1%']
-//         }))
-//         .pipe(sourcemaps.write('.'))
-//         .pipe(gulp.dest(paths.dist.css))
-// });
+gulp.task('copy:dist:css', function () {
+    return gulp.src([paths.src.scss + '/app.scss'])
+        .pipe(wait(500))
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['> 1%']
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(paths.dist.css))
+});
 
-// gulp.task('copy:dev:css', function () {
-//     return gulp.src([paths.src.scss + '/app/**/*.scss', paths.src.scss + '/custom/**/*.scss', paths.src.scss + '/app.scss'])
-//         .pipe(wait(500))
-//         .pipe(sourcemaps.init())
-//         .pipe(sass().on('error', sass.logError))
-//         .pipe(autoprefixer({
-//             overrideBrowserslist: ['> 1%']
-//         }))
-//         .pipe(sourcemaps.write('.'))
-//         .pipe(gulp.dest(paths.dev.css))
-// });
+gulp.task('copy:dev:css', function () {
+    return gulp.src([paths.src.scss + '/app.scss'])
+        .pipe(wait(500))
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['> 1%']
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(paths.dev.css))
+});
 
 // Copy Html
 gulp.task('copy:dist:html', function () {
@@ -272,18 +280,18 @@ gulp.task('copy:dev:assets', function () {
 });
 
 // Copy node_modules to vendor
-// gulp.task('copy:dist:vendor', function() {
-//     return gulp.src(npmDist(), { base: paths.src.node_modules })
-//       .pipe(gulp.dest(paths.dist.vendor));
-// });
+gulp.task('copy:dist:vendor', function() {
+    return gulp.src(npmDist(), { base: paths.src.node_modules })
+      .pipe(gulp.dest(paths.dist.vendor));
+});
 
-// gulp.task('copy:dev:vendor', function() {
-//     return gulp.src(npmDist(), { base: paths.src.node_modules })
-//       .pipe(gulp.dest(paths.dev.vendor));
-// });
+gulp.task('copy:dev:vendor', function() {
+    return gulp.src(npmDist(), { base: paths.src.node_modules })
+      .pipe(gulp.dest(paths.dev.vendor));
+});
 
-gulp.task('build:dev', gulp.series('clean:dev', 'copy:dev:html', 'copy:dev:html:index', 'copy:dev:assets',));
-gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:html', 'copy:dist:html:index', 'copy:dist:assets', 'minify:html', 'minify:html:index',));
+gulp.task('dev' , gulp.series('clean:dev' , 'copy:dev:css', 'copy:dev:html', 'copy:dev:html:index', 'copy:dev:assets', 'beautify:css', 'copy:dev:vendor'));
+gulp.task('prod', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:html:index', 'copy:dist:assets', 'minify:css', 'minify:html', 'minify:html:index', 'copy:dist:vendor'));
 
 // Default
 gulp.task('default', gulp.series('serve'));
