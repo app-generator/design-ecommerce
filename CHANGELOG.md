@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.0.2] 2023-03-21
+### Changes
+
+- Auth Pages:
+  - SignIN, Register
+- Added Video Components
+  - Modal popup
+  - Embeded Video
+
 ## [1.0.1] 2023-03-20
 ### Changes
 
