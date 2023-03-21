@@ -32,6 +32,7 @@ Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommer
   - ✅ HOMEpage
   - ✅ Category Page
   - ✅ Product  
+  - ✅ Auth Pages (signIn, register)
 
 <br />
 
