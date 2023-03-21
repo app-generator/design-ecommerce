@@ -7,7 +7,7 @@ Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommer
 
 <br />
 
-> `Need More?` **🛒 [BUY License](https://appseed.gumroad.com/l/design-ecommerce)**: `ONLY $19` (managed by GUMROAD) 
+> `Need More?` **🛒 [BUY License](https://appseed.gumroad.com/l/design-ecommerce)**: `ONLY $19` (one-time payment via GUMROAD) 
 
 - Access to [FIGMA File](https://bit.ly/figma-ecommerce) `view demo`
 - `Remove Footer Credits`
