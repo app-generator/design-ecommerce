@@ -23,7 +23,7 @@ Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommer
 
 ## Features
 
-- 🚀 [Bootstrap 5](https://www.admin-dashboards.com/bootstrap-5-templates/) 
+- 🚀 [Bootstrap 5](https://www.admin-dashboards.com/bootstrap-5-templates/) styling
 - ⚙️ `Gulp Tooling` (simple usage, no fancy tools)
 - ✅ **Easy Customization** (files already integrated)
   - `Primary/secondary` colors in [variables.scss](https://github.com/app-generator/design-ecommerce/blob/main/src/assets/scss/variables.scss)
