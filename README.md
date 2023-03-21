@@ -52,7 +52,7 @@ The design should be visible in the browser.
 
 ## How To Customize 
 
-> ✅ `Step 1`: Open & Edit `assets\scss\variables.scss`. This file allows to set the primary and seconday colors of the website
+> ✅ `Step 1`: Open & Edit `src/assets/scss/variables.scss`. This file allows to set the primary and seconday colors of the website
 
 ```sass
 /*
@@ -67,7 +67,7 @@ $warning:   #fbcf33 !default;
 $danger:    #ea0606 !default;
 ```
 
-> ✅ `Step 2`: Add custom styles to `assets\scss\custom.scss`. This file, initially shipped empty, should contain your own code CSS code.
+> ✅ `Step 2`: Add custom styles to `src/assets/scss/custom.scss`. This file, initially shipped empty, should contain your own code CSS code.
 
 ```sass
 .your-awesome-class {
