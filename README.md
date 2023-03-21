@@ -13,7 +13,7 @@ Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommer
 - `Remove Footer Credits`
 - `Updates`: Lifetime
 - `Unlimited` hobby & commercial `projects` 
-- 🚀 [Support](https://appseed.us/support/) via Email & Discord
+- 🚀 Free [Support](https://appseed.us/support/) (Email & Discord)
 
 <br />
 
