@@ -110,3 +110,36 @@ AOS.init({
   duration: 700,
   once: true,
 });
+
+// Embeded Video
+var player;
+// this function gets called when API is ready to use
+function onYouTubePlayerAPIReady() {
+  player = new YT.Player("video-player", {
+    events: {
+      onReady: onPlayerReady,
+    },
+  });
+}
+
+function onPlayerReady(event) {
+  document.getElementById("video-play-btn").onclick = function (event) {
+    event.preventDefault();
+    event.target.closest(".embedded-video-outer").classList.add("video-played");
+    player.playVideo();
+  };
+
+  document.getElementById("video-close-btn").onclick = function (event) {
+    event.preventDefault();
+    event.target
+      .closest(".embedded-video-outer")
+      .classList.remove("video-played");
+    player.pauseVideo();
+  };
+}
+
+// Inject YouTube API script
+var tag = document.createElement("script");
+tag.src = "//www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
