@@ -26,8 +26,8 @@ Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommer
 - 🚀 [Bootstrap 5](https://www.admin-dashboards.com/bootstrap-5-templates/) 
 - ⚙️ `Gulp Tooling` (simple usage, no fancy tools)
 - ✅ **Easy Customization** (files already integrated)
-  - `Primary/secondary` colors in [variables.scss](https://github.com/app-generator/design-ecommerce/blob/main/assets/scss/variables.scss)
-  - `Add your own code` in [custom.scss](https://github.com/app-generator/design-ecommerce/blob/main/assets/scss/custom.scss)
+  - `Primary/secondary` colors in [variables.scss](https://github.com/app-generator/design-ecommerce/blob/main/src/assets/scss/variables.scss)
+  - `Add your own code` in [custom.scss](https://github.com/app-generator/design-ecommerce/blob/main/src/assets/scss/custom.scss)
 - ✅ Pages
   - ✅ HOMEpage
   - ✅ Category Page
