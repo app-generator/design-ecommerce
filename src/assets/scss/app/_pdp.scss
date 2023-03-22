@@ -180,15 +180,14 @@
     }
 
     .product-future-list {
-        margin: 60px -12px 30px;
+        margin: 60px -12px 10px;
 
         .product-future-item {
-            padding: 10px 12px;
-            margin-left: 5px;
-            margin-bottom: 30px;
+            padding: 8px;
             text-align: center;
-            width: calc(50% - 30px);
             transition: all 0.3s;
+            display: block;
+            margin-left: 5px;
 
             img {
                 width: 32px;
@@ -201,8 +200,8 @@
                 font-family: 'Ubuntu';
                 color: $primary;
                 font-weight: 700;
-                font-size: 16px;
-                line-height: 20px;
+                font-size: 11px;
+                line-height: 15px;
                 text-align: center;
             }
 
@@ -216,6 +215,12 @@
             }
 
             &:hover {
+                .icon {
+                    transform: rotate(90deg);
+                }
+            }
+
+            &.active {
                 background-color: $white;
 
                 .icon {
@@ -238,6 +243,12 @@
         .product-future-list {
             .product-future-item {
                 width: auto;
+                padding: 10px 12px;
+
+                .product-future-text {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
         }
 

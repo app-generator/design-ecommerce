@@ -242,15 +242,14 @@
               </div>
             </div>
 
-            <div
-              class="product-future-list-outer d-flex justify-content-md-end"
-            >
-              <div class="product-future-list d-flex flex-wrap">
+            <ul class="nav nav-tabs product-future-list justify-content-md-end" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
                 <a
-                  href="#"
+                  href="#descripton-tab-pane"
                   title="description"
-                  class="product-future-item position-relative text-decoration-none"
+                  class="product-future-item position-relative text-decoration-none active"
                   data-aos="fade-left"
+                  data-bs-toggle="tab"
                 >
                   <img src="assets/img/ic-description.svg" alt="" />
                   <p class="product-future-text text-uppercase">
@@ -262,12 +261,15 @@
                     alt=""
                   />
                 </a>
+              </li>
+              <li class="nav-item" role="presentation">
                 <a
-                  href="#"
+                  href="#specification-tab-pane"
                   title="Product Specifications"
                   class="product-future-item position-relative text-decoration-none"
                   data-aos="fade-left"
                   data-aos-delay="200"
+                  data-bs-toggle="tab"
                 >
                   <img src="assets/img/ic-specifications.svg" alt="" />
                   <p class="product-future-text text-uppercase">
@@ -279,12 +281,15 @@
                     alt=""
                   />
                 </a>
+              </li>
+              <li class="nav-item" role="presentation">
                 <a
-                  href="#"
+                  href="#reviews-tab-pane"
                   title="Reviews"
                   class="product-future-item position-relative text-decoration-none"
                   data-aos="fade-left"
                   data-aos-delay="400"
+                  data-bs-toggle="tab"
                 >
                   <img src="assets/img/ic-reviews.svg" alt="" />
                   <p class="product-future-text text-uppercase">Reviews</p>
@@ -294,12 +299,15 @@
                     alt=""
                   />
                 </a>
+              </li>
+              <li class="nav-item" role="presentation">
                 <a
-                  href="#"
+                  href="#delivery-tab-pane"
                   title="Delivery Charges & Returns"
                   class="product-future-item position-relative text-decoration-none"
                   data-aos="fade-left"
                   data-aos-delay="600"
+                  data-bs-toggle="tab"
                 >
                   <img src="assets/img/ic-delivery.svg" alt="" />
                   <p class="product-future-text text-uppercase">
@@ -311,6 +319,24 @@
                     alt=""
                   />
                 </a>
+              </li>
+            </ul>
+            <div class="tab-content pb-4 pb-md-5" id="myTabContent">
+              <div class="tab-pane fade show active" id="descripton-tab-pane" role="tabpanel" aria-labelledby="descripton-tab" tabindex="0">
+                <h5>Description</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium laudantium ad doloremque tenetur voluptates voluptas quidem sed labore earum, ex autem doloribus dignissimos. Vitae quis alias at voluptas nulla error quaerat doloribus ex sunt? Nobis sit, hic non earum similique consectetur accusamus deleniti ducimus voluptates quam amet suscipit quo veritatis pariatur ratione, aliquam, ab minus? Totam ex obcaecati fuga, doloribus architecto molestiae ut rerum nihil numquam quas? Corporis, laudantium iure cupiditate ipsam rerum iusto aliquid quis tempora reprehenderit nemo aut praesentium repellat quos esse fuga assumenda! Illo veniam ipsam sit, similique nesciunt deleniti soluta quae natus eos ex aliquid!</p>
+              </div>
+              <div class="tab-pane fade" id="specification-tab-pane" role="tabpanel" aria-labelledby="specification-tab" tabindex="0">
+                <h5>Specifications</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium laudantium ad doloremque tenetur voluptates voluptas quidem sed labore earum, ex autem doloribus dignissimos. Vitae quis alias at voluptas nulla error quaerat doloribus ex sunt? Nobis sit, hic non earum similique consectetur accusamus deleniti ducimus voluptates quam amet suscipit quo veritatis pariatur ratione, aliquam, ab minus? Totam ex obcaecati fuga, doloribus architecto molestiae ut rerum nihil numquam quas? Corporis, laudantium iure cupiditate ipsam rerum iusto aliquid quis tempora reprehenderit nemo aut praesentium repellat quos esse fuga assumenda! Illo veniam ipsam sit, similique nesciunt deleniti soluta quae natus eos ex aliquid!</p>
+              </div>
+              <div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+                <h5>Reviews</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium laudantium ad doloremque tenetur voluptates voluptas quidem sed labore earum, ex autem doloribus dignissimos. Vitae quis alias at voluptas nulla error quaerat doloribus ex sunt? Nobis sit, hic non earum similique consectetur accusamus deleniti ducimus voluptates quam amet suscipit quo veritatis pariatur ratione, aliquam, ab minus? Totam ex obcaecati fuga, doloribus architecto molestiae ut rerum nihil numquam quas? Corporis, laudantium iure cupiditate ipsam rerum iusto aliquid quis tempora reprehenderit nemo aut praesentium repellat quos esse fuga assumenda! Illo veniam ipsam sit, similique nesciunt deleniti soluta quae natus eos ex aliquid!</p>
+              </div>
+              <div class="tab-pane fade" id="delivery-tab-pane" role="tabpanel" aria-labelledby="delivery-tab" tabindex="0">
+                <h5>Delivery</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, accusantium laudantium ad doloremque tenetur voluptates voluptas quidem sed labore earum, ex autem doloribus dignissimos. Vitae quis alias at voluptas nulla error quaerat doloribus ex sunt? Nobis sit, hic non earum similique consectetur accusamus deleniti ducimus voluptates quam amet suscipit quo veritatis pariatur ratione, aliquam, ab minus? Totam ex obcaecati fuga, doloribus architecto molestiae ut rerum nihil numquam quas? Corporis, laudantium iure cupiditate ipsam rerum iusto aliquid quis tempora reprehenderit nemo aut praesentium repellat quos esse fuga assumenda! Illo veniam ipsam sit, similique nesciunt deleniti soluta quae natus eos ex aliquid!</p>
               </div>
             </div>
           </section>

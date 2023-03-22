@@ -67,9 +67,13 @@ var swiper = new Swiper(".one-item-slider", {
 // One Item Slider
 var swiper = new Swiper(".navigation-slider", {
   loop: true,
-  slidesPerView: 1,
+  speed: 5000,
+  slidesPerView:'auto',
+  allowTouchMove: false,
+  disableOnInteraction: true,
   autoplay: {
     delay: 2500,
+    reverseDirection: true,
     disableOnInteraction: false,
   },
 });

@@ -11332,6 +11332,13 @@ h6,
 .header-top-part h6, .header-top-part .h6 {
   padding: 0;
   margin: 0;
+  transform: translateX(0);
+  animation: 12s linear 4s 1 show_msg_first, 24s linear 16s infinite show_msg;
+  white-space: nowrap;
+}
+.header-top-part h6 a, .header-top-part .h6 a {
+  color: #113869;
+  font-weight: bold;
 }
 
 .sub-navigation {
@@ -11348,6 +11355,22 @@ h6,
   line-height: 18px;
 }
 
+@keyframes show_msg_first {
+  0% {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes show_msg {
+  0% {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
 .navbar {
   background: #113869;
 }
@@ -12314,15 +12337,14 @@ h6,
   padding-right: 50px;
 }
 .max-apoclypse .product-future-list {
-  margin: 60px -12px 30px;
+  margin: 60px -12px 10px;
 }
 .max-apoclypse .product-future-list .product-future-item {
-  padding: 10px 12px;
-  margin-left: 5px;
-  margin-bottom: 30px;
+  padding: 8px;
   text-align: center;
-  width: calc(50% - 30px);
   transition: all 0.3s;
+  display: block;
+  margin-left: 5px;
 }
 .max-apoclypse .product-future-list .product-future-item img {
   width: 32px;
@@ -12334,8 +12356,8 @@ h6,
   font-family: "Ubuntu";
   color: #113869;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 11px;
+  line-height: 15px;
   text-align: center;
 }
 .max-apoclypse .product-future-list .product-future-item .icon {
@@ -12346,10 +12368,13 @@ h6,
   margin-top: -14px;
   transition: all 0.25s ease-in-out;
 }
-.max-apoclypse .product-future-list .product-future-item:hover {
+.max-apoclypse .product-future-list .product-future-item:hover .icon {
+  transform: rotate(90deg);
+}
+.max-apoclypse .product-future-list .product-future-item.active {
   background-color: #fff;
 }
-.max-apoclypse .product-future-list .product-future-item:hover .icon {
+.max-apoclypse .product-future-list .product-future-item.active .icon {
   transform: rotate(90deg);
 }
 
@@ -12360,6 +12385,11 @@ h6,
   }
   .max-apoclypse .product-future-list .product-future-item {
     width: auto;
+    padding: 10px 12px;
+  }
+  .max-apoclypse .product-future-list .product-future-item .product-future-text {
+    font-size: 16px;
+    line-height: 20px;
   }
   .max-apoclypse .product-details .price {
     padding: 0 35px;
