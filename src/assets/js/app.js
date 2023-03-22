@@ -64,6 +64,16 @@ var swiper = new Swiper(".one-item-slider", {
   },
 });
 
+// One Item Slider
+var swiper = new Swiper(".navigation-slider", {
+  loop: true,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
 // Slider with thumbnail
 var swiper = new Swiper(".slider-with-thumbnail .thumb-slider", {
   spaceBetween: 10,

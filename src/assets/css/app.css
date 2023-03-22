@@ -11979,6 +11979,7 @@ h6,
   background-color: #e2e2e2;
   margin-bottom: 18px;
   margin-left: 6px;
+  opacity: 1;
 }
 .review-section .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 14px;
