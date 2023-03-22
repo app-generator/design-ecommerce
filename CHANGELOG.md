@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.3] 2023-03-22
+### Changes
+
+- New Components
+  - Navigation Rotating Text
+  - Testimonials. added 3 texts
+  - Product Page, added Tabbed information 
+
 ## [1.0.2] 2023-03-21
 ### Changes
 
