@@ -1,4 +1,4 @@
-# [Free eCommerce Design](https://github.com/app-generator/design-ecommerce)
+# [eCommerce Design](https://github.com/app-generator/design-ecommerce)
 
 Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommerce)** Template styled with **Bootstrap 5** using a simple codebase and best practices - Actively supported by [AppSeed](https://appseed.us/).
 
