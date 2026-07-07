@@ -1,13 +1,13 @@
-# [eCommerce Design](https://github.com/app-generator/design-ecommerce)
+# eCommerce Design
 
-Open-Source **[eCommerce Design](https://github.com/app-generator/design-ecommerce)** Template styled with **Bootstrap 5** using a simple codebase and best practices - Actively supported by [AppSeed](https://appseed.us/).
+**eCommerce Design** Template styled with **Bootstrap 5** using a simple codebase and best practices - Provided by [App-Generator](https://app-generator.dev/).
 
 - 👉 [eCommerce Design](https://design-ecommerce.onrender.com): `LIVE DEMO`
-- 👉 `License` [CC BY 3.0](./LICENSE.md) - `Preserve footer credit`
+- 🚀 Need more? Try [Rocket eCommerce](https://app-generator.dev/product/rocket-ecommerce/django/), a flexible eCommerce CMS integrated with Stripe
 
 <br />
 
-## LICENSE Update
+## LICENSE
 
 > **Product is available for subscribers ONLY** - See [Pricing](https://app-generator.dev/terms/). **Here are the benefits**: 
 
@@ -114,4 +114,4 @@ At this point, the new styles should be visible in the website.
 <br />
 
 --- 
-[Free eCommerce Design](https://github.com/app-generator/design-ecommerce) - Open-Source project crafted by [AppSeed](https://appseed.us/).
+**[eCommerce Design](https://github.com/app-generator/design-ecommerce)** Template styled with **Bootstrap 5** using a simple codebase and best practices - Provided by [App-Generator](https://app-generator.dev/).
